@@ -4,7 +4,7 @@
            fetch="https://github.com/omnirom"
            review="gerrit.omnirom.org" />
     
-<!--sdm845 stock-->
+<!--Sony Xperia TAMA devices-->
     <project path="device/sony/akari" name="android_device_sony_akari" groups="device" remote="omnirom" revision="android-9.0" />
     <project path="device/sony/akatsuki" name="android_device_sony_akatsuki" groups="device" remote="omnirom" revision="android-9.0" />
     <project path="device/sony/apollo" name="android_device_sony_apollo" groups="device" remote="omnirom" revision="android-9.0" />
