@@ -1,6 +1,7 @@
 # XDA Thread
 
 https://forum.xda-developers.com/xperia-xz2/development/recovery-twrp-3-2-2-0-touch-recovery-t3821597
+https://forum.xda-developers.com/xperia-xz2/development/rom-omnirom-9-0r30-t3897951
 
 # Initialise the omnirom tree
 
