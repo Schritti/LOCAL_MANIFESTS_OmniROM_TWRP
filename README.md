@@ -34,13 +34,20 @@ cd ..
 
   - To download the code into the device repos created above, run the command:
 ```bash
-repo sync
+repo sync -j$((`nproc`-1));
 ```
 
   - To build the TWRP bootimage ("-eng" build)
 ```bash
 . build/envsetup.sh;
 export ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal omnirom twrp tree.
-lunch;
-make bootimage;
+lunch; # your device
+make bootimage -j$((`nproc`-1));
+```
+
+  - To build the image ("-userdebug" build)
+```bash
+. build/envsetup.sh;
+lunch; # your device
+make -j$((`nproc`-1));
 ```
