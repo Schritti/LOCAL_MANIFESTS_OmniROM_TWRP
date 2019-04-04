@@ -1,6 +1,7 @@
 # XDA Thread
 
 https://forum.xda-developers.com/xperia-xz2/development/recovery-twrp-3-2-2-0-touch-recovery-t3821597
+https://forum.xda-developers.com/xperia-xz2/development/rom-omnirom-9-0r30-t3897951
 
 # Initialise the omnirom tree
 
@@ -33,13 +34,20 @@ cd ..
 
   - To download the code into the device repos created above, run the command:
 ```bash
-repo sync
+repo sync -j$((`nproc`-1));
 ```
 
   - To build the TWRP bootimage ("-eng" build)
 ```bash
 . build/envsetup.sh;
 export ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal omnirom twrp tree.
-lunch;
-make bootimage;
+lunch; # your device
+make bootimage -j$((`nproc`-1));
+```
+
+  - To build the image ("-userdebug" build)
+```bash
+. build/envsetup.sh;
+lunch; # your device
+make -j$((`nproc`-1));
 ```
