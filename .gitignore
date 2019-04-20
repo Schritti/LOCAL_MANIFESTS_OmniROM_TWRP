@@ -1,2 +1,5 @@
 # Omni stuff
 roomservice.xml
+
+# JetBrains stuff
+.idea/
