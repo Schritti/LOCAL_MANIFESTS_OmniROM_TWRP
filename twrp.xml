@@ -3,8 +3,6 @@
     <remote name="TeamWin"
             fetch="https://github.com/TeamWin"
             review="https://gerrit.twrp.me" />
-    <remote name="MartinX3sAndroidDevelopment"
-            fetch="https://github.com/MartinX3sAndroidDevelopment" />
 
 <!-- TWRP lives in omnirom android-9.0 (not AOSP!) -->
     <remove-project name="platform/bootable/recovery" />
@@ -12,8 +10,4 @@
 
 <!-- Include external Magisk repo for repack binaries -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="master" />
-
-    <!-- Special for Xperia Devices we need a modified kernel to allow 'fastboot boot twrp.img' on SoC's with Snapdragon 845 and newer. -->
-    <remove-project name="android_kernel_sony_msm" />
-    <project name="sonyxperiadev-kernel" path="kernel/sony/msm" remote="MartinX3sAndroidDevelopment" revision="aosp/LE.UM.2.3.2.r1.4" />
 </manifest>
