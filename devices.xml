@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="omnirom"
-           fetch="https://github.com/omnirom"
-           review="gerrit.omnirom.org" />
+  <remote  name="Schritti"
+           fetch="https://github.com/Schritti" />
     
-<!--Sony Xperia TAMA devices-->
-    <project path="device/sony/akari" name="android_device_sony_akari" groups="device" remote="omnirom" revision="android-9.0" />
-    <project path="device/sony/akatsuki" name="android_device_sony_akatsuki" groups="device" remote="omnirom" revision="android-9.0" />
-    <project path="device/sony/apollo" name="android_device_sony_apollo" groups="device" remote="omnirom" revision="android-9.0" />
+<!--Sony Xperia Ganges devices-->
+    <project path="device/sony/ganges-common" name="android-device-ganges" groups="device" remote="Schritti" revision="master" />
+    <project path="device/sony/kirin" name="android-device-kirin" groups="device" remote="Schritti" revision="master" />
+    <project path="device/sony/mermaid" name="android-device-mermaid" groups="device" remote="Schritti" revision="master" />
 </manifest>
 
