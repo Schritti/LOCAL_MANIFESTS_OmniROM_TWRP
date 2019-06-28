@@ -4,8 +4,8 @@
            fetch="https://github.com/Schritti" />
     
 <!--Sony Xperia Ganges devices-->
-    <project path="device/sony/ganges-common" name="android-device-ganges" groups="device" remote="Schritti" revision="master" />
-    <project path="device/sony/kirin" name="android-device-kirin" groups="device" remote="Schritti" revision="master" />
-    <project path="device/sony/mermaid" name="android-device-mermaid" groups="device" remote="Schritti" revision="master" />
+    <project path="device/sony/ganges-common" name="device-sony-ganges" groups="device" remote="Schritti" revision="master" />
+    <project path="device/sony/kirin" name="device-sony-kirin" groups="device" remote="Schritti" revision="master" />
+    <project path="device/sony/mermaid" name="device-sony-mermaid" groups="device" remote="Schritti" revision="master" />
 </manifest>
 
